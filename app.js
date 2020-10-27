@@ -1,12 +1,23 @@
- 
+const user = { email: 'jdoe@gmail.com' };
 try {
     // Will produce a ReferenceError
     // myFunction();
 
     // Produce a TypeError
-    null.myFunction();
+    // null.myFunction();
+
+    // Will produce SyntaxError
+    // eval('Hello World'); // Will evaluate javaScript within a string.
+
+    // Will produce a URIError
+    // decodeURIComponent('%');
+
+    if (!user.name) {
+        throw 'User has no name' // throw is how we throw an error that we catch below. 
+    }
+
 } catch (error) {
-    console.log(`${error.name}: it's null!`)
+    console.log(error)
     // console.log(error.message);
     // console.log(error.name);
     // console.log(error instanceof ReferenceError) // Test to see what kind of error (error) is. 
