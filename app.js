@@ -13,11 +13,14 @@ try {
     // decodeURIComponent('%');
 
     if (!user.name) {
-        throw 'User has no name' // throw is how we throw an error that we catch below. 
+        // throw 'User has no name' // throw is how we throw an error that we catch below. 
+        throw new SyntaxError('User has no name') // Can throw a error as a syntax error with line and file included. 
+
     }
 
 } catch (error) {
-    console.log(error)
+    console.log(`User error: ${error.message}`)
+    //console.log(error)
     // console.log(error.message);
     // console.log(error.name);
     // console.log(error instanceof ReferenceError) // Test to see what kind of error (error) is. 
