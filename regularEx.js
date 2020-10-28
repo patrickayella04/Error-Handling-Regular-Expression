@@ -7,6 +7,6 @@ re = /hello/; // set to the regular expression a regular expression literal- thi
 // Functions that evaluate expressions:
 
 // exec() - Will Return results in an array if there is a match or null
-const result = re.exec('hello world') // we pass in whatever we want to match the regular expression to (in this case, hello world). 
+const result = re.exec('hi world') // we pass in whatever we want to match the regular expression to (in this case, hello world). If we put in ('hi world') we will get null. 
 
 console.log(result);// matches from the index number of the first matching text or digit. Then also outputs the actual string that we are matching. 
