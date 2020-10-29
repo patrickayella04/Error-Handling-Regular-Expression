@@ -31,3 +31,8 @@ re = /hello/i; // set to the regular expression a regular expression literal- th
 // const str = 'Patrick Hello There';
 // const result = str.search(re);
 // console.log(result);
+
+// replace() - Returns new string with some or all matches of a pattern -- will find the regular expression, match it, then replace it with something else. 
+const str = 'Hello There';
+const newStr = str.replace(re, 'Hi');
+console.log(newStr);
