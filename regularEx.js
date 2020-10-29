@@ -1,6 +1,8 @@
 // A regular expression describes a pattern of characters - used for pattern matching or pattern searching, also commonly used for validation and pulling phone numbers, email addresses out of a body of text...pulling anything that has certain patterns.
-let re; // Initalised a variable which stands for regular expression. 
+let re; // Initalised a variable which stands for regular expression.
+re = /hello/; 
 re = /hello/i; // set to the regular expression a regular expression literal- this is a regular expression.  i = case insensitive.
+re = /hello/g; // Global search - for an entire paragraph, will scan it all instances of hello, not just the first one it finds. 
 // console.log(re)
 // console.log(re.source) // Will show the regular expression without forward slashes.
 
@@ -18,4 +20,4 @@ re = /hello/i; // set to the regular expression a regular expression literal- th
 
 // test() - Returns true or false if there is a match
 const result = re.test('Hello'); // case sensitive 'Hello' will be false.However we can meke our regular expression case insensititve using 'i flag' above - /hello/i;
-console.log(result)
+console.log(result);
