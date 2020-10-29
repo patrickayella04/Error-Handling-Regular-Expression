@@ -23,6 +23,11 @@ re = /hello/i; // set to the regular expression a regular expression literal- th
 // console.log(result);
 
 // match() - Return result array or null 
-const str = 'Hello There';
-const result = str.match(re); // works the opposit of exec() where we pass the string into the regular expression method.
-console.log(result)
+// const str = 'Hello There';
+// const result = str.match(re); // works the opposit of exec() where we pass the string into the regular expression method.
+// console.log(result);
+
+// search() - Returns the index of the first match, if not found returns -1 (works similar to indexOf())
+// const str = 'Patrick Hello There';
+// const result = str.search(re);
+// console.log(result);
