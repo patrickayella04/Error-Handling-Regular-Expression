@@ -6,7 +6,7 @@ re = /hello/i; // set to the regular expression a regular expression literal- th
 // console.log(re)
 // console.log(re.source) // Will show the regular expression without forward slashes.
 
-// Functions that evaluate expressions:
+// Functions that evaluate regular expressions:
 
 // exec() - Will Return results in an array if there is a match or null
 // const result = re.exec('hello world') // we pass in whatever we want to match the regular expression to (in this case, hello world). If we put in ('hi world') we will get null. 
@@ -34,5 +34,5 @@ re = /hello/i; // set to the regular expression a regular expression literal- th
 
 // replace() - Returns new string with some or all matches of a pattern -- will find the regular expression, match it, then replace it with something else. 
 const str = 'Hello There';
-const newStr = str.replace(re, 'Hi');
-console.log(newStr);
+const newStr = str.replace(re, 'Good day');
+console.log(newStr); 
