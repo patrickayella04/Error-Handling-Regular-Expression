@@ -1,5 +1,14 @@
+let re;
+// Literal Characters
+re = /hello/;
+re = /hello/i;
+
+// Metacharacter Symbols
+
+
+
 // String to match
-const str = '';
+const str = 'Hello World';
 
 
 // Log Results
