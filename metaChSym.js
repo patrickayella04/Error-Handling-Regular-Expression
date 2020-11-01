@@ -9,11 +9,13 @@ re = / world$/i;  // Must end with
 re = /^hello$/i;  // Must begin and end with
 re = /^h.llo$/i;  // Matches any ONE character (the dot between h and L.)
 re = /h*llo$/i;   // Matches any character 0 or more times
+re = /gre?a?y/i;  // Optional character(gry also works)
+re = /gre?a?y\?/i;  // Escape character(question mark with backslash is now taken as a literal)
 
 
 
 // String to match
-const str = 'Hllo';
+const str = 'Hello grey?';
 
 
 // Log Results
