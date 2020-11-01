@@ -13,9 +13,16 @@ re = /gre?a?y/i;  // Optional character(gry also works)
 re = /gre?a?y\?/i;  // Escape character(question mark with backslash is now taken as a literal)
 
 
+// Brackets [] - Character Sets
+re = /gr[ae]y/i;   // Must be an a or e (gry will NOT work)
+re = /[GF]ray/i;   // Must be a G or F
+re = /[^GF]ray/i;  // Match anything except a G or F
+// re = /^[GF]ray/i;  // Must start with(^character in on the outside of brackets)
+re = /[GF]ray/;    // Match any uppercase letter 
+
 
 // String to match
-const str = 'Hello grey?';
+const str = 'iray';
 
 
 // Log Results
