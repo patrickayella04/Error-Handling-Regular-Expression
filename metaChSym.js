@@ -25,12 +25,16 @@ re = /[0-9][0-9]ray/;    // Match any digit
 
 
 // Braces {} - Qualifiers
-re = /Hel{2}o/ // Letter to be multiplied goes before braces(Must be exactly two L's)
+re = /Hel{2}o/ // Must occur exactly {m} amount of times. Letter to be multiplied goes before braces(Must be exactly two L's)
+re = /Hel{2,4}o/ // Must occur exactly {m} amount of times - between 2 and 4 times.
+re = /Hel{2,}o/ // Must occur at least {m} amount of times. 
 
+// Parentheses () - Grouping
+re = /^([0-9]x){3}$/
 
 
 // String to match
-const str = 'Hello';
+const str = '3x3x3x';
 
 
 // Log Results
