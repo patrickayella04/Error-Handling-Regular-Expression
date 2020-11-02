@@ -18,11 +18,19 @@ re = /gr[ae]y/i;   // Must be an a or e (gry will NOT work)
 re = /[GF]ray/i;   // Must be a G or F
 re = /[^GF]ray/i;  // Match anything except a G or F
 // re = /^[GF]ray/i;  // Must start with(^character in on the outside of brackets)
-re = /[GF]ray/;    // Match any uppercase letter 
+re = /[A-Z]ray/;    // Match any uppercase letter 
+re = /[a-z]ray/;    // Match any lowercase letter 
+re = /[A-Z a-z]ray/;   // Match any letter 
+re = /[0-9][0-9]ray/;    // Match any digit
+
+
+// Braces {} - Qualifiers
+re = /Hel{2}o/ // Letter to be multiplied goes before braces(Must be exactly two L's)
+
 
 
 // String to match
-const str = 'iray';
+const str = 'Hello';
 
 
 // Log Results
