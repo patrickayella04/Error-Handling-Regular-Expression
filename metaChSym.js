@@ -25,16 +25,27 @@ re = /[0-9][0-9]ray/;    // Match any digit
 
 
 // Braces {} - Qualifiers
-re = /Hel{2}o/ // Must occur exactly {m} amount of times. Letter to be multiplied goes before braces(Must be exactly two L's)
-re = /Hel{2,4}o/ // Must occur exactly {m} amount of times - between 2 and 4 times.
-re = /Hel{2,}o/ // Must occur at least {m} amount of times. 
+re = /Hel{2}o/; // Must occur exactly {m} amount of times. Letter to be multiplied goes before braces(Must be exactly two L's)
+re = /Hel{2,4}o/; // Must occur exactly {m} amount of times - between 2 and 4 times.
+re = /Hel{2,}o/; // Must occur at least {m} amount of times. 
 
 // Parentheses () - Grouping
-re = /^([0-9]x){3}$/
+re = /^([0-9]x){3}$/;
+
+// Shorthand Character Classes
+re = /\w/;   // Work Character - alphanumeric (any letter or number) or it can be an underscore _ . 
+re = /\w+/;  // + = one or more word characters
+re = /\W/;   // Uppercase W = None Word Character - anything but an alphanumberic and/or _ underscore.
+re = /\d/; // Match any digit
+re = /\d+/;  // Match any digit 0 or more times - add a plus sign + and it will match all numbers
+re = /\D+/; // Match any Non-digit
+re = /\s/;  // Match whitespace character
+re = /\S/   // Match Non-whitespace character
+re = /Hell/i // Word boundary
 
 
 // String to match
-const str = '3x3x3x';
+const str = 'Hello, welcome to Hell';
 
 
 // Log Results
