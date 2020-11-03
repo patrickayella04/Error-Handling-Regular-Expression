@@ -41,11 +41,14 @@ re = /\d+/;  // Match any digit 0 or more times - add a plus sign + and it will 
 re = /\D+/; // Match any Non-digit
 re = /\s/;  // Match whitespace character
 re = /\S/   // Match Non-whitespace character
-re = /Hell/i // Word boundary
+re = /Hell\b/i // Word boundary
 
+// Assertions - similar to conditionals - if statements
+re = /x(?=y)/  // Match x only if it's followed by y
+re = /x(?!y)/  // Match x only if it's NOT followed by y
 
 // String to match
-const str = 'Hello, welcome to Hell';
+const str = 'x';
 
 
 // Log Results
